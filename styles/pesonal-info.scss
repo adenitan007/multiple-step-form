@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
-  $Marine-blue: hsl(213, 96%, 18%);
+$Marine-blue: hsl(213, 96%, 18%);
 $Purplish-blue: hsl(243, 100%, 62%);
 $Pastel-blue: hsl(228, 100%, 84%);
 $Light-blue: hsl(206, 94%, 87%);
@@ -15,17 +14,13 @@ $Magnolia: hsl(217, 100%, 97%);
 $Alabaster: hsl(231, 100%, 99%);
 $White: hsl(0, 0%, 100%);
 
-
 * {
   list-style-type: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-
-
-
 
 body {
   margin: 0 !important;
@@ -71,34 +66,53 @@ body {
     }
   }
 
-
-
-  .main-container1{
+  .main-container1 {
     padding: 26px 17px;
     position: absolute;
     background-color: $White;
-    top: 14%;
+    top: 16%;
     left: 6%;
-   width: 89%;
-   height: 50%;
-   border-radius: 10px;
+    width: 89%;
+    height: 50%;
+    border-radius: 10px;
+    border: 0.1px solid rgb(236, 235, 235);
 
-   h1{
-    font-size: 30px;
-    margin-bottom: 15px;
-    color:$Marine-blue ;
-   }
-   p{
-    color:$Cool-gray;
-    line-height: 23px;
-    margin-bottom: 20px;
-   }
-   form{
-    label{
-      color:$Marine-blue;
-      font-size: 20px;
-      margin-bottom: 10px;
+    h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+      color: $Marine-blue;
     }
-   }
+    p {
+      color: $Cool-gray;
+      line-height: 23px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      label {
+        color: $Marine-blue;
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      input[type="text"] {
+        font-size: 15px;
+        padding: 8px;
+        color: $Marine-blue;
+        width: 100%;
+        border: 1px solid $Marine-blue;
+        border-radius: 4px;
+      }
+    }
+  }
+  input[type="submit"] {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    background-color: $marine-blue;
+    color: $White;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: nonel;
   }
 }
