@@ -22,7 +22,7 @@ body {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 25vh;
+  height: 27vh;
 }
 .container nav {
   display: flex;
