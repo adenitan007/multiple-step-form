@@ -1,0 +1,50 @@
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 !important;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    object-fit: cover;
+    height: 25vh;
+  }
+
+  & nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    > button {
+      border-radius: 50%;
+      margin-left: 7px;
+      text-align: center;
+      font-size: 15px;
+      border: solid 2px white;
+      background: transparent;
+      color: white;
+      font-weight: 800;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+      &.active {
+        background-color: white;
+        color: blue;
+      }
+    }
+  }
+}
