@@ -54,7 +54,7 @@ body {
   padding: 26px 17px;
   position: absolute;
   background-color: hsl(0, 0%, 100%);
-  top: 14%;
+  top: 16%;
   left: 6%;
   width: 89%;
   height: 50%;
@@ -62,7 +62,7 @@ body {
   border: 0.1px solid rgb(236, 235, 235);
 }
 .container .main-container1 h1 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 15px;
   color: hsl(213, 96%, 18%);
 }
@@ -73,22 +73,33 @@ body {
 }
 .container .main-container1 form label {
   color: hsl(213, 96%, 18%);
-  font-size: 24px;
+  font-size: 15px;
   margin-top: 10px;
+}
+.container .main-container1 form input#name {
+  color: hsl(231, 11%, 63%);
+}
+.container .main-container1 form input#email {
+  color: hsl(231, 11%, 63%);
+}
+.container .main-container1 form input#Pnumber {
+  color: hsl(231, 11%, 63%);
 }
 .container .main-container1 form input[type=text] {
   font-size: 15px;
   padding: 8px;
   color: hsl(213, 96%, 18%);
   width: 100%;
-  border: 1px solid hsl(213, 96%, 18%);
+  border: 1px solid hsl(231, 11%, 63%);
   border-radius: 4px;
 }
 .container input[type=submit] {
   position: absolute;
   bottom: 100px;
   right: 20px;
-  background-color: hsl(228, 100%, 84%);
+  background-color: hsl(213, 96%, 18%);
   color: hsl(0, 0%, 100%);
-  padding: 5px 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
 }/*# sourceMappingURL=pesonal-info.css.map */
