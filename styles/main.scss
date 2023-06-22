@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-@import "/styles/_variables/variables.scss";
+@import "colors";
+@import"media-queries";
 
+%align-center {
+  display: flex;
+  align-items: center;
+}
 
 * {
   list-style-type: none;
@@ -19,8 +24,7 @@
 
   body {
     background-color: $Magnolia;
-    display: flex;
-    align-items: center;
+    @extend %align-center;
     justify-content: center;
     min-height: 100vh;
 
@@ -29,6 +33,10 @@
       background-color: $White;
       border-radius: 1rem;
       box-shadow: 0px 0px 1px $Marine-blue;
+
+      // @include mobile{
+      //   margin-top: -4em!important;
+      // }
 
       .form-container {
         display: flex;
@@ -45,8 +53,7 @@
           gap: 2rem;
 
           .step {
-            display: flex;
-            align-items: center;
+            @extend %align-center;
             gap: 0.8rem;
 
             .active {
@@ -59,8 +66,7 @@
               height: 40px;
               border: 2px solid $White;
               border-radius: 50%;
-              display: flex;
-              align-items: center;
+              @extend %align-center;
               justify-content: center;
               color: $White;
               font-weight: 700;
@@ -124,8 +130,7 @@
 
               .label {
                 color: $Marine-blue;
-                display: flex;
-                align-items: center;
+                @extend %align-center;
                 justify-content: space-between;
                 font-size: 20px;
 
@@ -185,9 +190,8 @@
             }
 
             form {
-              display: flex;
+              @extend %align-center;
               flex: 1;
-              align-items: center;
               gap: 2rem;
 
               .plan-card {
@@ -221,67 +225,36 @@
                   }
                 }
               }
-
-              .switcher {
-                background-color: $Magnolia;
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                padding: 0.5rem;
-                margin-bottom: 5rem;
-                justify-content: center;
-
-                .monthly,
-                .yearly {
-                  color: $Cool-gray;
-                  font-weight: 500;
-
-                  &.sw-active {
-                    color: $Marine-blue;
-                  }
-
-                   .switch {
-                    position: relative;
-                    display: inline-block;
-                    width: 50px;
-                    height: 24px;
-                   }
-
-                }
-              }
-
-
-
-
-
-
-              // .btns {
-              //   display: flex;
-              //   align-items: center;
-              //   justify-content: space-between;
-              // }
-
-              // .prev-stp {
-              //   margin-top: auto;
-              //   margin-bottom: 2rem;
-              //   border: none;
-              //   font-weight: 700;
-              //   background-color: transparent;
-              //   padding: 1rem 2rem;
-              //   border-radius: 7px;
-              //   color: var(--Cool-gray);
-              //   cursor: pointer;
-              // }
-
-
-
             }
 
+            .switcher {
+              background-color: $Magnolia;
+               @extend %align-center;
+              gap: 0.5rem;
+              padding: 0.5rem;
+              margin-bottom: 5rem;
+              justify-content: center;
 
+              .monthly,
+              .yearly {
+                color: $Cool-gray;
+                font-weight: 500;
 
+                &.sw-active {
+                  color: $Marine-blue;
+                }
+
+                .switch {
+                  position: relative;
+                  display: inline-block;
+                  width: 50px;
+                  height: 24px;
+                }
+
+              }
+            }
 
             .btns {
-
               .next-stp {
                 background-color: $Marine-blue;
                 color: $White;
@@ -313,53 +286,3 @@
     }
   }
 }
-
-
-// // .hidden {
-// //   display: none;
-// // }
-
-// img {
-//   max-width: 100%;
-// }
-
-// body {
-//   background-color: $Magnolia;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   min-height: 100vh;
-// }
-
-// .form {
-//   width: 900px;
-//   background-color: $White;
-//   border-radius: 1rem;
-//   box-shadow: 0px 0px 1px black;
-
-//   .form-container {
-//     display: flex;
-//     padding: 1rem;
-
-//     .form-sidebar {
-//       background-image: url("./images/bg-sidebar-desktop.svg");
-//       background-repeat: no-repeat;
-//       width: 400px;
-//       height: 568px;
-//       padding: 3rem 2rem;
-//       display: flex;
-//       flex-direction: column;
-//       gap: 2rem;
-//     }
-
-// .next-stp {
-//   margin-top: auto;
-//   margin-bottom: 2rem;
-//   margin-left: auto;
-//   border: none;
-//   padding: 1rem 2rem;
-//   border-radius: 7px;
-//   background-color: var(--Marine-blue);
-//   color: white;
-//   cursor: pointer;
-// }
