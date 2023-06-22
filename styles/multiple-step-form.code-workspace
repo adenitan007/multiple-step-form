@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "multiple-step-form",
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "multiple-step-form",
+    "liveServer.settings.port": 5501
+  }
+}

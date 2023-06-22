@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+* img {
+  max-width: 100%;
+}
+* body {
+  background-color: hsl(217, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+* body .form {
+  width: 900px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1px black;
+}
+* body .form .form-container {
+  display: flex;
+  padding: 1rem;
+}
+* body .form .form-container .form-sidebar {
+  background-image: url("/styles/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 568px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+* body .form .form-container .form-sidebar .step {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+* body .form .form-container .form-sidebar .step .active {
+  background-color: hsl(206, 94%, 87%) !important;
+  color: hsl(213, 96%, 18%) !important;
+}
+* body .form .form-container .form-sidebar .step .circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+* body .form .form-container .form-sidebar .step .step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+* body .form .form-container .form-sidebar .step .step-content span {
+  text-transform: uppercase;
+  color: hsl(229, 24%, 87%);
+  font-size: 13px;
+}
+* body .form .form-container .form-sidebar .step .step-content b {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+* body .form .form-container .stp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 54%;
+}
+* body .form .form-container .stp.step-1 {
+  display: none;
+  width: 90%;
+}
+* body .form .form-container .stp.step-1 .header {
+  margin-top: 30px;
+  line-height: 2.5rem;
+}
+* body .form .form-container .stp.step-1 .header h1 {
+  font-size: 40px;
+}
+* body .form .form-container .stp.step-1 .header .title {
+  color: hsl(213, 96%, 18%);
+}
+* body .form .form-container .stp.step-1 .header .exp {
+  color: hsl(231, 11%, 63%);
+}
+* body .form .form-container .stp.step-1 form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 35px;
+  gap: 1rem;
+}
+* body .form .form-container .stp.step-1 form .label {
+  color: hsl(213, 96%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+* body .form .form-container .stp.step-1 form .label .error {
+  display: none;
+  color: hsl(354, 84%, 57%);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+* body .form .form-container .stp.step-1 form input {
+  padding: 1rem;
+  border: 2px solid hsl(231, 11%, 63%);
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+* body .form .form-container .stp.step-1 .btns .next-stp {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px 30px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 8px;
+  position: relative;
+  float: right;
+}
+* body .form .form-container .stp.step-2 {
+  width: 90%;
+}
+* body .form .form-container .stp.step-2 .header {
+  margin-top: 30px;
+  line-height: 2.5rem;
+}
+* body .form .form-container .stp.step-2 .header h1 {
+  font-size: 40px;
+}
+* body .form .form-container .stp.step-2 .header .title {
+  color: hsl(213, 96%, 18%);
+}
+* body .form .form-container .stp.step-2 .header .exp {
+  color: hsl(231, 11%, 63%);
+}
+* body .form .form-container .stp.step-2 form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 2rem;
+}
+* body .form .form-container .stp.step-2 form .plan-card {
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 7px;
+  width: 150px;
+  height: 170px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+* body .form .form-container .stp.step-2 form .plan-card .plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+* body .form .form-container .stp.step-2 form .plan-card .plan-info b {
+  color: hsl(213, 96%, 18%);
+}
+* body .form .form-container .stp.step-2 form .plan-card .plan-info span {
+  color: hsl(231, 11%, 63%);
+}
+* body .form .form-container .stp.step-2 form .monthly,
+* body .form .form-container .stp.step-2 form .yearly {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+* body .form .form-container .stp.step-2 form .monthly.sw-active,
+* body .form .form-container .stp.step-2 form .yearly.sw-active {
+  color: var(--Marine-blue);
+}
+* body .form .form-container .stp.step-2 .btns .next-stp {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px 30px;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 8px;
+  position: relative;
+  float: right;
+}
+* body .form .form-container .stp.step-2 .btns .prev-stp {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  border: none;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  color: hsl(231, 11%, 63%);
+  cursor: pointer;
+} /*# sourceMappingURL=pesonal-info.css.map */
