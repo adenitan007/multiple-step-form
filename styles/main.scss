@@ -170,6 +170,7 @@
           }
 
           &.step-2 {
+            
             width: 90%;
 
             .header {
@@ -206,7 +207,7 @@
                 align-items: flex-start;
                 justify-content: space-between;
 
-                .selected {
+                &.selected {
                   border: 2px solid $Purplish-blue;
                   background-color: $Magnolia;
                 }
@@ -229,7 +230,7 @@
 
             .switcher {
               background-color: $Magnolia;
-               @extend %align-center;
+              @extend %align-center;
               gap: 0.5rem;
               padding: 0.5rem;
               margin-bottom: 5rem;
@@ -277,6 +278,7 @@
                 color: $Cool-gray;
                 cursor: pointer;
               }
+
             }
           }
         }
