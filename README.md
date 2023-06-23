@@ -37,3 +37,6 @@ Users should be able to:
   - A step is submitted, but no selection has been made
 
 ### Screenshot
+
+
+![2023-06-23](https://github.com/adenitan007/multiple-step-form/assets/82835363/fa902c6e-742f-4697-bec5-0df80d160784)
