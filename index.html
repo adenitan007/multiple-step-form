@@ -2,24 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>multiple-step</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./styles/images/G.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <title>Giant | Multi-step form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="multi.js" defer></script>
   </head>
-
   <body>
     <div class="form">
       <div class="form-container">
         <!-- Sidebar start -->
         <div class="form-sidebar">
-          <div class="step">
-            <div class="circle active">1</div>
+          <div class="step active">
+            <div class="circle">1</div>
             <div class="step-content">
               <span>Step 1</span>
               <b>Your info</b>
@@ -94,7 +100,7 @@
         </div>
         <!-- Step 1 end -->
         <!-- * Step 2 start -->
-        <div class="stp step-2" hidden>
+        <div class="stp step-2">
           <div class="header">
             <h1 class="title">Select your plan</h1>
             <p class="exp">You have the option of monthly or yearly billing.</p>
@@ -108,14 +114,14 @@
               </div>
             </div>
             <div class="plan-card">
-              <img src="./styles/images/icon-advanced.svg" alt="advanced" />
+              <img src="./styles/images/icon-advanced.svg" alt="arcade" />
               <div class="plan-info">
                 <b>Advanced</b>
                 <span class="plan-priced">$12/mo</span>
               </div>
             </div>
             <div class="plan-card">
-              <img src="./styles/images/icon-pro.svg" alt="pro" />
+              <img src="./styles/images/icon-pro.svg" alt="arcade" />
               <div class="plan-info">
                 <b>Pro</b>
                 <span class="plan-priced">$15/mo</span>
@@ -137,7 +143,7 @@
         </div>
         <!-- Step 2 end -->
         <!-- * Step 3 start -->
-        <!-- <div class="stp step-3" hidden>
+        <div class="stp step-3">
           <div class="header">
             <h1 class="title">Pick add-ons</h1>
             <p class="exp">Add-ons help enhance your gaming experience.</p>
@@ -172,10 +178,10 @@
             <button class="prev-stp" type="button">Go Back</button>
             <button class="next-stp" type="submit">Next Step</button>
           </div>
-        </div> -->
+        </div>
         <!-- Step 3 end -->
         <!-- * Step 4 start -->
-        <!-- <div class="stp step-4" hidden>
+        <div class="stp step-4">
           <div class="header">
             <h1 class="title">Finishing up</h1>
             <p class="exp">
@@ -204,11 +210,11 @@
             <button class="prev-stp" type="button">Go Back</button>
             <button class="next-stp" type="submit">Next Step</button>
           </div>
-        </div> -->
+        </div>
         <!-- Step 4 end -->
         <!-- Step 5 start -->
-        <!-- <div class="stp step-5" hidden>
-          <img src="./assets/images/icon-thank-you.svg" alt="" />
+        <div class="stp step-5">
+          <img src="./styles/images/icon-thank-you.svg" alt="" />
           <div class="header">
             <h1 class="title">Thank you!</h1>
             <p class="exp">
@@ -218,8 +224,8 @@
             </p>
           </div>
           <button class="next-stp"></button>
-        </div>  -->
-        <!-- Step 5 end-->
+        </div>
+        <!-- Step 5 end -->
       </div>
     </div>
   </body>
